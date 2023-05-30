@@ -20,17 +20,19 @@ D E 1 8 H A 1 9 H 3 0
 D E 8 H 3 0 À 1 1 H 4 5
 6 M A I 2 0 2 3 3
 D E 1 9 H A 1 9 H 3 0
+
 Heures de travail
 Pauline Trépos -> 44H
 Fortunel Alizé -> 41H
 Souchon Aude -> 41H
 Estelle Rouder -> 42H
 Laverton Agath -> 40H
+
 2 5 / 2 6 M A I 2 0 2 3
 D E 9 H A 1 0 H 3 0
+
+Les limites
 - N O T I F I C A T I O N
 - R E C E T T E P R É F É R É E ( C O U P D E C O E U R )
 - D É S A C T I V A T I O N D E L ' O P T I O N C O M M E N T A I R E
 - P H O T O D E L U T I L I S A T E U R L E M E I U X N O T É
-Les limites
-
