@@ -26,8 +26,8 @@ D E 1 9 H A 1 9 H 3 0
 Heures de travail
 Pauline Trépos -> 44H
 Fortunel Alizé -> 41H
-Souchon Aude -> 41H
-Estelle Rouder -> 42H
+Souchon Aude -> 41H;
+Estelle RoudeT -> 42H;
 Laverton Agath -> 40H
 
 2 5 / 2 6 M A I 2 0 2 3
