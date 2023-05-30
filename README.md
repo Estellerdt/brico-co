@@ -5,11 +5,13 @@ c'est à dire un catalogue de recette facile.
 PROJET
 2022/2023
 L E 3 1 M A I S
-P A R T R E P O S P A U L I N E , F O R T U N E L A L I Z E ,
-S O U C H O N A U D E , R O U D E T E S T E L L E , L A V E R T O N
-A G T A H
-Heures
-d'échanges
+P A R
+T R E P O S  P A U L I N E , 
+F O R T U N E L  A L I Z E ,
+S O U C H O N A U D E , R O U D E T E S T E L L E ,
+L A V E R T O N
+A G ATH
+Heures d'échanges
 2 9 M A R S 2 0 2 3
 D E 8 H 3 0 À 1 1 H 4 5
 5 / 1 2 / 1 9 A V R I L 2 0 2 3
