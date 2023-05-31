@@ -1,40 +1,40 @@
-# brico-co
+# Brico and co
 
-Créer un site de "cuisine pour les nuls",
-c'est à dire un catalogue de recette facile.
-PROJET
+Créer un site de "cuisine pour les nuls", c'est à dire un catalogue de recette facile.
+Projet
 2022/2023
-L E 3 1 M A I S
-P A R
-T R E P O S  P A U L I N E , 
-F O R T U N E L  A L I Z E ,
-S O U C H O N A U D E , R O U D E T E S T E L L E ,
-L A V E R T O N
-A G ATH
+Le 31 mai
+par
+Trepas Pauline,
+Fortunel Alizé,
+Souchon Aude,
+Roudet Estelle,
+Laverton Agath
 Heures d'échanges
-2 9 M A R S 2 0 2 3
-D E 8 H 3 0 À 1 1 H 4 5
-5 / 1 2 / 1 9 A V R I L 2 0 2 3
-D E 8 H 3 0 À 1 1 H 4 5
-2 5 A V R I L 2 0 2 3
-D E 1 8 H A 1 9 H 3 0
-1 0 / 1 7 / 2 4 M A I 2 0 2 3
-D E 8 H 3 0 À 1 1 H 4 5
-6 M A I 2 0 2 3 3
-D E 1 9 H A 1 9 H 3 0
+29 mars 2023
+de 8h30 à 11h45
+5/12/19 avril 2023
+de 8h30 à 11h45
+25 avril 2023
+de 18h à 19h30
+10/17/24 mai 2023
+de 8h30 à 11h45
+6 mai 2023
+de 19h à 19h30
 
 Heures de travail
-Pauline Trépos -> 44H
-Fortunel Alizé -> 41H
-Souchon Aude -> 41H;
-Estelle RoudeT -> 42H;
-Laverton Agath -> 40H
+Pauline Trépos -> 44h
+Fortunel Alizé -> 41h
+Souchon Aude -> 41h;
+Estelle Roudet -> 42h;
+Laverton Agath -> 40h
 
-2 5 / 2 6 M A I 2 0 2 3
-D E 9 H A 1 0 H 3 0
+25/26 mai 2023
+de 9h à 10h30
 
 Les limites
-- N O T I F I C A T I O N
-- R E C E T T E P R É F É R É E ( C O U P D E C O E U R )
-- D É S A C T I V A T I O N D E L ' O P T I O N C O M M E N T A I R E
-- P H O T O D E L U T I L I S A T E U R L E M E I U X N O T É
+
+    Notification
+    Recette préférée (coup de coeur)
+    Désactivation de l'option commentaire
+    Photo de l'utilisateur le mieux noté
