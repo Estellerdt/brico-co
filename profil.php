@@ -106,6 +106,7 @@ session_start();
 <section class="commentaires">
             <h2>Commentaires de l'utilisateur</h2>
             <?php
+            /*
             // Lecture des commentaires à partir du fichier CSV
             $nom_fichier_csv = "commentaire.csv";
             $commentaires = lire_commentaires_utilisateur($nom_fichier_csv, $_SESSION['username']);
@@ -143,6 +144,7 @@ session_start();
                 }
                 return $commentaires_utilisateur;
             }
+            */
             ?>
         </section>
 	</main>
