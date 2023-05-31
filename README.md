@@ -5,7 +5,7 @@ Projet
 2022/2023
 Le 31 mai
 par
-Trepas Pauline,
+Trepos Pauline,
 Fortunel Alizé,
 Souchon Aude,
 Roudet Estelle,
