@@ -25,9 +25,9 @@ de 19h à 19h30
 Heures de travail
 Pauline Trépos -> 44h
 Fortunel Alizé -> 41h
-Souchon Aude -> 41h;
-Estelle Roudet -> 42h;
-Laverton Agath -> 40h
+Souchon Aude -> 42h;
+Estelle Roudet -> 43h;
+Laverton Agath -> 41h
 
 25/26 mai 2023
 de 9h à 10h30
