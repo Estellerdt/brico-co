@@ -63,7 +63,7 @@ body {
 
 
 <div class="logo">
-  <img src="logo.png" alt="Brico&Co Logo">
+  <img src="images/logo.png" alt="Brico&Co Logo">
 </div>
 
 <br><br>
@@ -74,7 +74,7 @@ body {
 </p>
 <br>
 <div class="image">
-  <img src="brico.jpg" alt="Image 1">
+  <img src="images/brico.jpg" alt="Image 1">
 </div>
 <br><br><br>
 <br><br><br>
