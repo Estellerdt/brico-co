@@ -86,11 +86,14 @@ session_start();
 		<section>
 			<h2>Gestion du site</h2>
 			<ul2>
-				<li><a class="lien" href="ajoutRecette.php">Ajout de recettes</a>
+				<li><a class="lien" href="ajoutRecette-adminForm.php">Ajout tuto</a>
 				</li>
 
-				<li><a class="lien" href="suppressionRecetteForm.php">Supprimer une recette</a></li>
+				<li><a class="lien" href="suppressionRecetteForm.php">Supprimer tuto</a></li>
 			</ul2>
+			
+			<li><a class="lien" href="EnvoieTuto-Admin-User-Form.php">Voir suggestions tutos des utilisateurs </a>
+				</li>
 		</section>
 		
 	</main>

@@ -5,7 +5,6 @@
 <body>
 <?php include 'entete.php'; ?>
 <br><br>
-
 <?php
 session_start();
 
@@ -21,13 +20,14 @@ if (isset($_GET['index'])) { // index contient l'endroit ou se situe le commenta
         unset($commentaires[$index]); //  supprime l'élément du tableau commentaires qui correspond à la clé $index
         
         // Écriture des commentaires restants dans le fichier CSV
-        $handle = fopen($nom_fichier_csv, "w");
+        $handle = fopen($nom_fichier_csv, "w+");
         foreach ($commentaires as $commentaire) {
             fputcsv($handle, $commentaire);
         }
         fclose($handle);
          
             echo "Le commentaire a été supprimé avec succès.";
+            echo '<br><a href="profil.php">Retourner au profil</a>';
     } else {
         echo "Index de commentaire invalide.";
     }
@@ -46,7 +46,6 @@ function lire_commentaires($nom_fichier) {
     return $commentaires;
 }
 ?>
-
 <br><br><br>
 <object data="footer.html" width="100%" height="500px"></object>
 

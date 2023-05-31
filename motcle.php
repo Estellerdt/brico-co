@@ -118,7 +118,13 @@ if (empty($resultats)) {
             // Vérifier si la recette a déjà été affichée
             if (!in_array($nomRecette, $recettesTrouvees)) {
            $valeurColonne9 = $recettesParCategorie[$categorie][$nomRecette];
-            echo "<p class='recette'><a href='recette.php?tuto=" . urlencode($nomRecette) . "'>$nomRecette</a> - " . end($valeurColonne9) . "</p>";
+	$note = end($valeurColonne9);
+        $etoiles = '';
+        for ($i = 1; $i <= $note; $i++) {
+          $etoiles .= '★';
+        }
+            echo "<p class='recette'><a href='recette.php?tuto=" . urlencode($nomRecette) . "'>$nomRecette</a> - " . $etoiles. "</p>";
+            
 
 
 

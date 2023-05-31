@@ -130,7 +130,7 @@ img#logo {
 
 </form>
 <a href="accueil.php">
-  <img id="logo" src="logo.png" alt="logo">
+  <img id="logo" src="images/logo.png" alt="logo">
 </a>
 <br><br><br>
 

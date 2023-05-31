@@ -78,13 +78,13 @@ input[type="submit"]:hover {
           <option>Balancoire</option>
           <option>Niche</option>
           <option>Fauteuil</option>
-          <option>Table</option>
+          <option>Table de jardin</option>
           <option>Bureau</option>
           <option>Etagere</option>
           <option>Penderie</option>
-          <option>Tabledechevet</option>
-          <option>Etagèresflottantes</option>
-          <option>Porteepices</option>
+          <option>Table de chevet</option>
+          <option>Etageres flottantes</option>
+          <option>Porte epices</option>
           <option>Table</option>
           <option>Bar</option>
      </select>
