@@ -24,7 +24,7 @@ de 19h à 19h30
 
 Heures de travail
 Pauline Trépos -> 44h
-Fortunel Alizé -> 42h
+Fortunel Alizé -> 44h
 Souchon Aude -> 43h;
 Estelle Roudet -> 44h;
 Laverton Agath -> 41h
