@@ -6,46 +6,69 @@
 <meta name="author" content="Fortunel Alizé, Trepos Pauline, Estelle Roudet, Laverton Agath, Aude Souchon">
 <title>Brico & co</title>
 <style>
-    body {
-        font-size: 16px;
-        color: #666;
-        background-color: #F5F5DC;
-        font-family: Helvetica, Arial, sans-serif;
-    }
+        body {
+            margin: 20px;
+            
+        }
 
-    h1 {
-        font-size: 32px;
-        color: #333;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+        label{
+            font-family: cursive;
+        }
 
-    form {
-        max-width: 400px;
-        margin: 0 auto;
-    }
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
 
-    label {
-        display: inline-block;
-        width: 150px;
-        text-align: right;
-        margin-right: 10px;
-    }
+        input {
+            border: solid 1px orange;
+            margin-bottom: 10px;
+            padding: 16px;
+            outline: none;
+            border-radius: 7px;
+            width: 100%;
+        }
 
-    input[type="password"],
-    input[type="text"],
-    input[type="date"] {
-        width: 200px;
-    }
+        /* Set a style for all buttons */
+        input[type=submit] {
+            margin-bottom: 10px;
+            float: right;
+            outline: none;
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: #FFF;
+            background-color: #2D9988;
+            cursor: pointer;
+        }
 
-    input[type="submit"] {
-        display: block;
-        margin: 20px auto;
-    }
-    a{
-    color: #2D9988;
-    }
+        input[type=submit]:hover {
+            background-color: #0099CC;
+        }
+
+        .left-item {
+            margin-right: 30px;
+        }
+
+        .right-item {
+            margin-left: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFFAFA;
+            background: #2D9988;
+            font-family: cursive;
+        }
+
+        h2{
+            color: #333;
+            text-decoration: underline;
+            font-family: cursive;
+        }
+
 </style>
 
 
@@ -74,31 +97,38 @@ session_start();
 	<main>
 		<section>
 			<h2>Informations personnelles</h2>
+            <br><br>
 			
 <form name="form" action="modification-profil.php" method="POST">
 		
+<div class="left-item">
         <label for="password"> Mot de passe: </label>
         <input type="password" name="password" id="password" placeholder="Entrez votre mot de passe"><br>
- </div><br><br>
+ </div>
+
+ <div class="right-item">
         <label for="confirmationmotdepasse "> Confirmer mot de passe: </label>
         <input type="confirmationmotdepasse" name="confirmationmotdepasse" id="confirmationmotdepasse" placeholder="Entrez votre mot de passe">
-<br>
- </div><br><br>
-        <div>
+ </div>
+
+ <div class="left-item">
             <label for="Prenom "> Prenom: </label>
             <input type="prenom" name="prenom" id="prenom" placeholder="Entrez votre prénom">
-        </div><br><br>
-        <div>
+</div>
+
+<div class="right-item">
             <label for="Nom "> Nom: </label>
             <input type="nom" name="nom" id="nom" placeholder="Entrez votre nom">
-        </div><br><br>
+</div>
         
-		<div>
-		<label>Date de naissance</label> <br>
-		<input type="date" name="date"><br><br>
-		</div><br><br>
+<div class="left-item">
+		<label>Date de naissance</label>
+		<input type="date" name="date"><br>
+</div>
 
+<div class="right-item">
 		<input type="submit"  name="valider" value="Creation">
+</div>
  
  </form>
 		</section>
