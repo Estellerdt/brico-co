@@ -4,52 +4,74 @@
     <title>Ajouter un commentaire</title>
     <meta charset="utf-8"/>
     <style>
-       body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #F5F5DC;
-}
+       * {
+            font-family: arial;
+        }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
+        body {
+            margin: 20px;
 
-form {
-  max-width: 500px;
-  margin-bottom: 20px;
-}
+        }
 
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
+        label{
+            font-family: cursive;
+        }
 
-input[type="text"],
-textarea,
-select {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
 
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
+        input {
+            border: solid 1px orange;
+            margin-bottom: 10px;
+            padding: 16px;
+            outline: none;
+            border-radius: 7px;
+            width: 100%;
+        }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
+        /* Set a style for all buttons */
+        input[type=submit] {
+            margin-bottom: 10px;
+            float: right;
+            outline: none;
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: #FFF;
+            background-color: #2D9988;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #0099CC;
+        }
+
+        .left-item {
+            margin-right: 30px;
+        }
+
+        .right-item {
+            margin-left: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFFAFA;
+            background: #2D9988;
+        }
+
+        .image {
+   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+        .image img {
+     max-width: 250px;
 }
 
 .error {
@@ -61,14 +83,19 @@ input[type="submit"]:hover {
 </head>
 <body>
     <h1>Ajouter un commentaire</h1>
+    <br><br>
     
     <form action="ajoutCommentaire.php" method="post">
+    <div class="left-item">
         <label for="nom_utilisateur">Nom d'utilisateur :</label>
-        <input type="text" id="nom_utilisateur" name="nom_utilisateur" required><br><br>
-        
+        <input type="text" id="nom_utilisateur" name="nom_utilisateur" required>
+</div>
+<div class="right-item">
         <label for="motdepasse">Mot de passe :</label>
-        <textarea id="motdepasse" name="motdepasse" required></textarea><br><br>
-        
+        <input id="motdepasse" name="motdepasse" required>
+</div>
+
+<div class="left-item">
         <label for="tuto">tuto :</label>
          <select name="tuto">
           <option>Biblio</option>
@@ -88,7 +115,10 @@ input[type="submit"]:hover {
           <option>Table</option>
           <option>Bar</option>
      </select>
-        
+</div>
+<br><br>
+
+<div class="left-item">
      <label for="note">Note :</label>
     <select name="note">
         <option value="1">★</option>
@@ -96,10 +126,12 @@ input[type="submit"]:hover {
         <option value="3">★★★</option>
         <option value="4">★★★★</option>
         <option value="5">★★★★★</option>
-    </select><br><br>
+    </select></div><br><br>
     
+    <div class="left-item">
     <label for="commentaire">Commentaire :</label>
-    <textarea id="commentaire" name="commentaire" required></textarea><br><br>
+    <textarea id="commentaire" name="commentaire" required></textarea>
+</div><br><br>
     
     <input type="submit" value="Ajouter">
 </form>

@@ -6,7 +6,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="Fortunel Alizé, Trepos Pauline, Estelle Roudet, Laverton Agath, Aude Souchon">
+<meta name="author" content="Fortunel Alizé, Trepos Pauline, Souchon Aude, Estelle Roudet, Laverton Agath">
 <title>Brico & co</title>
 
     <style>
@@ -115,7 +115,7 @@ session_start();
                 
         <div>
             <label for="categorie">Categorie</label>
-            <input type="categorie" name="categorie" id="categorie" placeholder="Quel est la categorie de l'objet??">
+            <input type="categorie" name="categorie" id="categorie" placeholder="Quel est la categorie de l'objet?">
         </div><br><br>
         <div>
             <label for="objet">Objet</label>
@@ -126,7 +126,7 @@ session_start();
         <input type="difficulte" name="difficulte" id="difficulte" placeholder="Niveau de difficulte">
 
         <label for="temps"> Temps d'execution</label>
-        <input type="temps" name="temps" id="temps" placeholder="temps d'execution">
+        <input type="temps" name="temps" id="temps" placeholder="Temps d'execution">
 
         <div>
             <label for="steps">Etapes</label>

@@ -29,5 +29,5 @@ fwrite($handle, "\n".$tab);
 fclose($handle);
 
 header("Location:profil-admin.php");
-
+?>
 

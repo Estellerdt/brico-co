@@ -10,84 +10,66 @@
 <title>Brico & co</title>
 
     <style>
+        * {
+            font-family: arial;
+        }
+
         body {
-            font-size: 16px;
-            color: #666;
-            background-color: #F5F5DC;*
-              font-family: Helvetica, Arial, sans-serif;
+            margin: 20px;
+
+        }
+
+        label{
+            font-family: cursive;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        input {
+            border: solid 1px orange;
+            margin-bottom: 10px;
+            padding: 16px;
+            outline: none;
+            border-radius: 7px;
+            width: 100%;
+        }
+
+        /* Set a style for all buttons */
+        input[type=submit] {
+            margin-bottom: 10px;
+            float: right;
+            outline: none;
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: #FFF;
+            background-color: #2D9988;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #0099CC;
+        }
+
+        .left-item {
+            margin-right: 30px;
+        }
+
+        .right-item {
+            margin-left: 30px;
         }
 
         h1 {
-            font-size: 32px;
-            color: #333;
             text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            color: #FFFAFA;
+            background: #2D9988;
         }
 
-        .categorie {
-            float: left;
-            font-weight: bold;
-        }
-
-        .id {
-            text-align: center;
-            font-size: 55px;
-            font-weight: bold;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-
-        .difficulte {
-            background-color: beige;
-            text-align: center;
-            font-size: 24px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            width: 30%;
-            margin: 0 auto;
-        }
-
-        .temps {
-            background-color: beige;
-            text-align: center;
-            font-size: 24px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            width: 30%;
-            margin: 0 auto;
-        }
-
-        .etapes {
-            background-color: #2D9988;
-            text-align: center;
-            font-size: 28px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            display: inline-block;
-            margin: 20px;
-            width: 40%;
-            border: 2px solid #8B4513;
-            vertical-align: top;
-             color: white;
-             font-family: Helvetica, Arial, sans-serif;
-        }
-
-        .materiaux {
-            background-color: #2D9988;
-            text-align: center;
-            font-size: 30px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            width: 50%;
-            display: inline-block;
-            margin: 20px;
-            border: 2px solid #8B4513;
-            vertical-align: top;
-            color: white;
-            font-family: Helvetica, Arial, sans-serif;
-        }
         .image {
    margin-top: 10px;
   display: flex;
@@ -111,47 +93,51 @@
 session_start();
 ?>
 <h1>Ajouter une recette</h1>
+<br><br>
 <?php if( isset($_SESSION['email']) && $_SESSION['email'] == "popo@gmail.com" ) : ?>
 
 <form name="form" action="ajoutRecette-admin.php" method="POST">
                 
-        <div>
-            <label for="categorie">Categorie</label>
+        <div class="left-item">
+            <label for="categorie">Categorie:</label>
             <input type="categorie" name="categorie" id="categorie" placeholder="Quel est la categorie de l'objet?">
-        </div><br><br>
-        <div>
-            <label for="objet">Objet</label>
+        </div>
+        <div class="right-item">
+            <label for="objet">Objet:</label>
             <input type="objet" name="objet" id="objet" placeholder="Quel est votre objet?">
-        </div><br><br>
+        </div>
 
-        <label for="difficulte"> Difficulte</label>
+        <div class="left-item">
+        <label for="difficulte"> Difficulte:</label>
         <input type="difficulte" name="difficulte" id="difficulte" placeholder="Niveau de difficulte">
-</div>
-<br><br><br>
-        <label for="temps"> Temps d'execution</label>
+        </div>
+
+        <div class="right-item">
+        <label for="temps"> Temps d'execution:</label>
         <input type="temps" name="temps" id="temps" placeholder="temps d'execution">
-</div><br><br><br>
-        <div>
-            <label for="steps">Etapes</label>
+        </div>
+
+        <div class="left-item">
+            <label for="steps">Etapes:</label>
             <input type="steps" name="steps" id="steps" placeholder="Les differentes étapes">
-        </div><br><br>
-
-        <div>
-            <label for="materiaux">Materiaux</label>
+        </div><br>
+        
+        <div class="left-item">
+            <label for="materiaux">Materiaux:</label>
             <input type="materiaux" name="materiaux" id="materiaux" placeholder="Les differents materiaux">
-        </div><br><br>
-
-        <div>
-            <label for="lien">Image</label>
+        </div><br>
+        
+        <div class="left-item">
+            <label for="lien">Image:</label>
             <input type="lien" name="lien" id="lien" placeholder="Les differents materiaux" >
-        </div><br><br>
-            
-            <div>
-            <label for="cout">Cout</label>
+        </div>
+                 
+        <div class="right-item">
+            <label for="cout">Cout:</label>
             <input type="cout" name="cout" id="cout"  placeholder="Le cout estimé">
-        </div><br><br>
+        </div><br>
             
-
+        <br><br><br>
         <input type="submit"  name="valider" value="Creation">
  
  </form>
