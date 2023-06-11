@@ -13,7 +13,7 @@
             font-size: 16px;
             color: #666;
             background-color: #F5F5DC;
-              font-family: Helvetica, Arial, sans-serif;
+            font-family: Helvetica, Arial, sans-serif;
         }
 
         h1 {
@@ -24,109 +24,88 @@
             margin-bottom: 20px;
         }
 
-        .categorie {
+        .categorie, 
+        .difficulte,
+        .temps {
             float: left;
             font-weight: bold;
+            color: #333;
+            clear: both;
+            font-family: cursive;
         }
 
         .id {
             text-align: center;
             font-size: 55px;
-            font-weight: bold;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-
-        .difficulte {
-            background-color: beige;
-            text-align: center;
-            font-size: 24px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            width: 30%;
-            margin: 0 auto;
-        }
-
-        .temps {
-            background-color: beige;
-            text-align: center;
-            font-size: 24px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            width: 30%;
-            margin: 0 auto;
-        }
-
-        .etapes {
-            background-color: #2D9988;
-            text-align: center;
-            font-size: 28px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            display: inline-block;
-            margin: 20px;
-            width: 40%;
-            border: 2px solid #8B4513;
-            vertical-align: top;
-             color: white;
-             font-family: Helvetica, Arial, sans-serif;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-family: cursive;
+            text-decoration: underline;
         }
 
         .materiaux {
             background-color: #2D9988;
-            text-align: center;
-            font-size: 30px;
-            padding-top: 20px;
+            padding-top: 10px;
+            font-size: 12px;
             padding-bottom: 20px;
-            width: 50%;
             display: inline-block;
-            margin: 20px;
-            border: 2px solid #8B4513;
-            vertical-align: top;
+            width: 33%;
             color: white;
-            font-family: Helvetica, Arial, sans-serif;
+            font-family: cursive;
+            max-height: 600px;
+            margin right:10 px;
         }
+
+        .etapes {
+            background-color: #2D9988;
+            font-size: 12px;
+            float:right;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            width: 53%;
+            display: inline-block;
+            color: white;
+            font-family: cursive;
+            max-height: 600px;
+            margin right:10 px;
+        }
+
         .image {
-   margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  
-}
+            float: center;
+        }
+
         .image img {
-     max-width: 250px;
-}
+            max-width: 250px;
+        }
 
-.comments {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #F5F5DC;
-  border-radius: 4px;
-  position: relative;
-}
+        .comments {
+            margin-top: 130px;
+            padding: 10px;
+            background-color: #F5F5DC;
+            border-radius: 4px;
+        }
 
-.ajouter_commentaires {
-  display: inline-block;
-  background-color: green;
-  color: #fff;
-  text-align: center;
-  line-height: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  margin-top: 10px;
-}
+        .ajouter_commentaires {
+            display: inline-block;
+            background-color: #2D9988;
+            color: #fff;
+            float: right;
+            line-height: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
 
-.comments h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
+        .comments h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
 
-.comments p {
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-
+        .comments p {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
 
 .comments .comment {
   border-bottom: 1px solid #ccc;
@@ -147,6 +126,52 @@
     display: inline-block;
      
 }
+
+form {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #F5F5DC;
+  border-radius: 4px;
+  front family:cursive;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form input[type="submit"] {
+  display: inline-block;
+  background-color: #2D9988;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2D9988;
+}
+
+form .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
     </style>
 </head>
 
@@ -169,11 +194,11 @@
             if ($ligne[1] === $tuto) {
                 // Afficher les données de la ligne
                 echo "<div class='categorie'>" . $ligne[0] . "</div>";
-                echo "<div class='id'>" . $ligne[1] . "</div>";
-                echo "<div class='image'><img src='" . $ligne[6] . "' alt='image'></div>";
                 echo "<div class='temps'>" . $ligne[2] . "</div>";
                 echo "<div class='temps'>" . $ligne[7] . "</div>";
                 echo "<div class='difficulte'>" . $ligne[3] . "</div>";
+                echo "<div class='id'>" . $ligne[1] . "</div>";
+                echo "<div class='image'><img src='" . $ligne[6] . "' alt='image'></div>";
                 echo "<div class='materiaux'>" . nl2br(str_replace('-', '<br><br>', $ligne[5])) . "</div>";
                 echo "<div class='etapes'>" . nl2br(str_replace('-', '<br><br>', $ligne[4])) . "</div>";
             }
@@ -215,7 +240,7 @@
     function lire_commentaires_tutoriel($nom_fichier, $tuto)
     {
         $commentaires_tutoriel = array();
-        if (($fichier = fopen($nom_fichier, 'r')) !== false) {
+        if (($fichier = fopen($nom_fichier, "r")) !== false) {
             while (($ligne = fgetcsv($fichier)) !== false) {
                 if ($ligne[0] === $tuto) {
                     $commentaires_tutoriel[] = $ligne;
@@ -225,14 +250,13 @@
         }
         return $commentaires_tutoriel;
     }
-    ///////////////////////////////////////////
     ?>
 
 
     <div class="comments">
         <h3>Commentaires</h3>
         <form method="GET" action="tricom.php">
-            <label for="sort">Trier par :</label>
+            <label for="sort">Trier les commentaires par :</label>
             <select name="sort" id="sort">
                 <option value="date">Date</option>
                 <option value="note">Note</option>
