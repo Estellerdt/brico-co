@@ -111,10 +111,11 @@ img#logo {
 
 }
 #search {
-  width: 450px; 
-  margin-right: 10px;
-  padding: 5px;
-  font-size: 16px; 
+  background-color: #FFF;
+  border: 1px solid #2D9988;
+  border-radius: 4px;
+  outline: none;
+  width: 370px;
 }
 
 
