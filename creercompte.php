@@ -1,87 +1,115 @@
-<!DOCTYPE  html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8"/>
     <style>
-       * {
+        * {
             font-family: arial;
         }
- 
+
         body {
             margin: 20px;
+
         }
- 
+
+        label{
+            font-family: cursive;
+        }
+
         form {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-left: -150px;
-            margin-top: -100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
         }
- 
+
         input {
-            border: solid 1px blue;
-            margin-bottom: 5px;
+            border: solid 1px orange;
+            margin-bottom: 10px;
             padding: 16px;
             outline: none;
             border-radius: 7px;
-            width: 300px;
+            width: 100%;
         }
 
-/* Set a style for all buttons */
+        /* Set a style for all buttons */
         input[type=submit] {
-        background-color: #53af57;
-        color: white;
-        padding: 5px;
-        margin: 8px;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-}
+            margin-bottom: 10px;
+            float: right;
+            outline: none;
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: #FFF;
+            background-color: #2D9988;
+            cursor: pointer;
+        }
+
         input[type=submit]:hover {
-        background-color: white;
-        color: #53af57;
-        border: 1px solid #53af57;
-}
+            background-color: #0099CC;
+        }
+
+        .left-item {
+            margin-right: 30px;
+        }
+
+        .right-item {
+            margin-left: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFFAFA;
+            background: #2D9988;
+        }
+
     </style>
 </head>
-
 <body>
 
+<br><br>
+<h1>Création de compte</h1>
+<br><br>
+
 <form name="form" action="creation.php" method="POST">
-		<div>
-            <label for="Email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Entrez vore email">
-        </div><br>
-		<div>
-            <label for="Confirmationemail">Confirmation email:</label>
-            <input type="confirmationemail" name="confirmationemail" id="confirmationemail" placeholder="Confirmez vore email">
-        </div><br><br>
+    <div class="left-item">
+        <label for="Email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Entrez votre email">
+    </div>
+    <div class="right-item">
+        <label for="Confirmationemail">Confirmation email:</label>
+        <input type="confirmationemail" name="confirmationemail" id="confirmationemail" placeholder="Confirmez votre email">
+    </div>
 
+    <div class="left-item">
         <label for="password"> Mot de passe: </label>
-        <input type="password" name="password" id="password" placeholder="Entrez vore mot de passe">
+        <input type="password" name="password" id="password" placeholder="Entrez votre mot de passe">
+    </div>
 
+    <div class="right-item">
         <label for="confirmationmotdepasse "> Confirmation mot de passe: </label>
-        <input type="confirmationmotdepasse" name="confirmationmotdepasse" id="confirmationmotdepasse" placeholder="Entrez vore mot de passe">
+        <input type="confirmationmotdepasse" name="confirmationmotdepasse" id="confirmationmotdepasse" placeholder="Entrez votre mot de passe">
+    </div>
 
-        <div>
-            <label for="Prenom "> Prenom: </label>
-            <input type="prenom" name="prenom" id="prenom" placeholder="Entrez vore prénom">
-        </div><br><br>
-        <div>
-            <label for="Nom "> Nom: </label>
-            <input type="nom" name="nom" id="nom" placeholder="Entrez vore nom">
-        </div><br><br>
-        
-		<div>
-		<label>Date de naissance</label> <br>
-		<input type="date" name="date"><br><br>
-		</div><br><br>
+    <div class="left-item">
+        <label for="Prenom "> Prénom: </label>
+        <input type="prenom" name="prenom" id="prenom" placeholder="Entrez votre prénom">
+    </div>
 
-		<input type="submit"  name="valider" value="Creation">
- 
- </form>
+    <div class="right-item">
+        <label for="Nom "> Nom: </label>
+        <input type="nom" name="nom" id="nom" placeholder="Entrez votre nom">
+    </div>
 
+    <div class="left-item">
+        <label>Date de naissance:</label>
+        <input type="date" name="date">
+    </div>
 
- </body> 
+    <div class="right-item">
+    <input type="submit" name="valider" value="Création">
+    </div>
+</form>
+
+</body>
 </html>

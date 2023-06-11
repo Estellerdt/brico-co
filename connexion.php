@@ -7,68 +7,85 @@
         * {
             font-family: arial;
         }
- 
-     body {
-    font-size: 40px;
-    color: #666;
-    background-color: #F5F5DC;
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 20px;
-}
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
+        body {
+            margin: 20px;
+            background-color: #F5F5DC;
+        }
 
-h1 {
-    font-size: 40px;
-    color: #2D9988;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 
-input[type=submit] {
-    border: solid 1px #2D9988;
-    margin-bottom: 10px;
-    padding: 15px;
-    outline: none;
-    border-radius: 7px;
-    width: 120px;
-    background-color: #F5F5DC;
-    color: #2D9988;
-}
+        h1 {
+            text-align: center;
+            color: #FFFAFA;
+            background: #2D9988;
+        }
 
-input {
-    border: solid 1px #2D9988;
-    margin-bottom: 10px;
-    padding: 16px;
-    outline: none;
-    border-radius: 7px;
-    width: 300px;
-}
+        input[type=submit] {
+            margin-bottom: 10px;
+            float: right;
+            outline: none;
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: #FFF;
+            background-color: #2D9988;
+            cursor: pointer;
+        }
 
-.erreur {
-    text-align: center;
-    color: red;
-    margin-top: 10px;
-}
+        input[type=submit]:hover {
+            background-color: #0099CC;
+        }
 
-a {
-    font-size: 14pt;
-    color: #2D9988;
-    text-decoration: none;
-    font-weight: normal;
-}
+        input {
+            border: solid 1px orange;
+            margin-bottom: 10px;
+            padding: 16px;
+            outline: none;
+            border-radius: 7px;
+            width: 300px;
+        }
 
-a:hover {
-    text-decoration: underline;
-    color: #2D9988;
-}
+        .erreur {
+            text-align: center;
+            color: red;
+            margin-top: 10px;
+        }
+
+        a {
+            font-size: 12pt;
+            color: #2D9988;
+            text-decoration: none;
+            font-weight: normal;
+            font-family: arial;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .no-account {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 10pt;
+            color: #2D9988;
+            position: relative;
+        }
+
+        .no-account img {
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            right: -40px;
+            top: 70%;
+            transform: translateY(-50%);
+        }
     </style>
 </head>
 
