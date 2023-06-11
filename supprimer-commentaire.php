@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,8 +9,6 @@
 <?php include 'entete.php'; ?>
 <br><br>
 <?php
-session_start();
-
 if (isset($_GET['index'])) { // index contient l'endroit ou se situe le commentaire
     $index = $_GET['index'];
     
@@ -20,7 +21,7 @@ if (isset($_GET['index'])) { // index contient l'endroit ou se situe le commenta
         unset($commentaires[$index]); //  supprime l'élément du tableau commentaires qui correspond à la clé $index
         
         // Écriture des commentaires restants dans le fichier CSV
-        $handle = fopen($nom_fichier_csv, "w+");
+        $handle = fopen($nom_fichier_csv, "r+");
         foreach ($commentaires as $commentaire) {
             fputcsv($handle, $commentaire);
         }
