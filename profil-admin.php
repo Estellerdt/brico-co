@@ -14,21 +14,24 @@ session_start();
 			font-family: Helvetica, Arial, sans-serif;
 		}
 		h1 {
+			text-decoration: underline;
 			font-size: 40px;
 			color: #333;
 			text-align: center;
 			margin-top: 20px;
 			margin-bottom: 20px;
+			font-family: georgia;
 		}
 		h2 {
 		color: #666;
 		background-color: #F5F5DC;
-		
+		text-decoration: underline;
 		}
 		ul2 {
 			list-style-type: none;
 			padding: 0;
 			margin: 0;
+			font-family: cursive;
 		}
 
 		li {
@@ -56,7 +59,7 @@ session_start();
 		<h1>Profil de l'admin</h1>
 	</header>
 
-
+<br><br>
 	<a class="lien" href="/accueil.php">Page Accueil</a>
 	<main>
 		<section class="informations">
@@ -76,12 +79,13 @@ session_start();
 			</ul2>
 		</section>
 
-<br>
+<br><br>
 
 		<a class="lien" href="/deconnexion.php">Se deconnecter</a>
 		<a class="lien" href="/supprimer-compte.php">Supprimer mon compte</a>
 		<a class="lien" href="/modif.php">Modifier mon profil</a><br>
 
+<br><br><br>
 
 		<section>
 			<h2>Gestion du site</h2>
